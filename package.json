@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "rimraf ./dist && vite build",
+		"build": "vite build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -18,7 +18,6 @@
 		"@vitejs/plugin-react": "^3.0.0",
 		"eslint": "^8.31.0",
 		"eslint-plugin-react": "^7.31.11",
-		"rimraf": "^3.0.2",
 		"sass": "^1.57.1",
 		"vite": "^4.0.0",
 		"vite-jsconfig-paths": "^2.0.1"
