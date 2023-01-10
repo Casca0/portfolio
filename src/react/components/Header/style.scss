@@ -1,5 +1,6 @@
 @import '../../__globals.scss';
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 .l-header {
 	background-color: $primary-color;
@@ -15,7 +16,8 @@
 	&__title {
 		margin: 0 0 0 5vmax;
 		color: $title-color;
-		font-family: 'Pacifico', cursive;
+		// font-family: 'Pacifico', cursive;
+		font-family: 'Dancing Script', cursive;
 		cursor: default;
 		font-size: 3rem;
 	}
