@@ -1,0 +1,51 @@
+@import '../../__globals.scss';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.l-header {
+	background-color: $primary-color;
+	display: flex;
+	padding: 20px;
+	border-radius: 0 0 50px 50px;
+	justify-content: space-between;
+	align-items: center;
+	height: max-content;
+	text-align: center;
+	user-select: none;
+
+	&__title {
+		margin: 0 0 0 5vmax;
+		color: $title-color;
+		font-family: 'Pacifico', cursive;
+		cursor: default;
+		font-size: 3rem;
+	}
+
+	&__nav {
+		margin-right: 10vw;
+
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+			width: 20vw;
+			height: max-content;
+
+			li {
+				a {
+					text-decoration: none;
+					color: $title-color;
+					border-radius: 15px;
+					border: solid 3px $secundary-color;
+					padding: 15px;
+					transition: ease-in 0.2s;
+					font-weight: 700;
+
+					&:hover {
+						background-color: $secundary-color;
+						color: $text-color;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import '../../__globals.scss';
+
+.l-home {
+	background-color: $primary-color;
+	padding: 15px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	height: max-content;
+
+	h1 {
+		color: $text-color;
+		background-color: $secundary-color;
+		text-align: right;
+		text-overflow: clip;
+		font-size: 6rem;
+		padding: 5vh 5vh 5vh 15vw;
+		height: max-content;
+		margin: 0;
+		border-radius: 15px;
+		cursor: default;
+		user-select: none;
+	}
+
+	p {
+		height: max-content;
+		margin: 0 15px;
+		font-size: 3rem;
+		text-align: left;
+		color: $title-color;
+	}
+}
