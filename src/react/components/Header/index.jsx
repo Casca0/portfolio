@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.scss';
 
+import { Link } from 'react-scroll';
+
 function Header() {
 	return (
 		<header className='l-header'>
@@ -10,13 +12,43 @@ function Header() {
 			<nav className='l-header__nav'>
 				<ul>
 					<li>
-						<a href="#home" target="_blank" rel="noopener noreferrer">Home</a>
+						<Link 
+							activeClass='--active' 
+							className='l-header__nav-link'
+							to='home'
+							spy={true}
+							smooth={true}
+							offset={-80}
+							duration={500}
+						>
+							Home
+						</Link>
 					</li>
 					<li>
-						<a href="#about" target="_blank" rel="noopener noreferrer">Sobre</a>
+						<Link 
+							activeClass='--active' 
+							className='l-header__nav-link'
+							to='about'
+							spy={true}
+							smooth={true}
+							offset={-55}
+							duration={500}
+						>
+							Sobre
+						</Link>
 					</li>
 					<li>
-						<a href="#" target="_blank" rel="noopener noreferrer">Projetos</a>
+						<Link 
+							activeClass='--active' 
+							className='l-header__nav-link'
+							to=''
+							spy={true}
+							smooth={true}
+							offset={-105}
+							duration={500}
+						>
+							Projetos
+						</Link>
 					</li>
 				</ul>
 			</nav>

@@ -1,25 +1,56 @@
 @import '../../__globals.scss';
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+html:not([data-scroll='0']) {
+	.l-header {
+		background-color: #191A19;
+
+		&__title {
+			color: $text-color;
+		}
+
+		&__nav-link {
+			background-color: #1E5128;
+			color: $text-color;
+			border: solid 3px $primary-color;
+
+			&:hover {
+				background-color: #4E9F3D;
+				color: $text-color;
+			}
+		}
+
+		.--active {
+			background-color: #4E9F3D;
+			color: $text-color;
+		}
+	}
+}
 
 .l-header {
 	background-color: $primary-color;
 	display: flex;
 	padding: 20px;
 	border-radius: 0 0 50px 50px;
+	margin: 0 15px;
 	justify-content: space-between;
 	align-items: center;
 	height: max-content;
 	text-align: center;
 	user-select: none;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	transition: ease-in-out 0.2s;
 
 	&__title {
 		margin: 0 0 0 5vmax;
 		color: $title-color;
-		// font-family: 'Pacifico', cursive;
 		font-family: 'Dancing Script', cursive;
 		cursor: default;
 		font-size: 3rem;
+		transition: ease-in-out 0.2s;
+
 	}
 
 	&__nav {
@@ -31,23 +62,23 @@
 			list-style: none;
 			width: 20vw;
 			height: max-content;
+		}
+	}
 
-			li {
-				a {
-					text-decoration: none;
-					color: $title-color;
-					border-radius: 15px;
-					border: solid 3px $secundary-color;
-					padding: 15px;
-					transition: ease-in 0.2s;
-					font-weight: 700;
+	&__nav-link {
+		text-decoration: none;
+		color: $title-color;
+		border-radius: 15px;
+		border: solid 3px $secundary-color;
+		padding: 15px;
+		transition: ease-in 0.2s;
+		font-size: 1.3rem;
+		font-weight: 700;
+		cursor: pointer;
 
-					&:hover {
-						background-color: $secundary-color;
-						color: $text-color;
-					}
-				}
-			}
+		&:hover {
+			background-color: $secundary-color;
+			color: $text-color;
 		}
 	}
 }
