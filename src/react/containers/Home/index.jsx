@@ -1,9 +1,13 @@
 import React from 'react';
 import './style.scss';
 
-import profilePic from '@assets/20220103_135309.jpg';
+import profilePic from '@assets/profilePic.webp';
 
 function Home() {
+	const todayDate = new Date();
+
+	const yearsOld = todayDate.getFullYear() - 2001;
+
 	return (
 		<div className='l-home' id='home'>
 			<section>
@@ -15,7 +19,7 @@ function Home() {
 					<img src={profilePic} alt='Uma foto minha' title='Uma foto minha' />
 					<figcaption>Lucas Borzani</figcaption>
 				</figure>
-				<p>21y</p>
+				<p>{yearsOld - 1}y</p>
 				<p>Desenvolvedor Front-end</p>
 				<p>Atleta</p>
 			</div>

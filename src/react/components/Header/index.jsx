@@ -16,6 +16,7 @@ function Header() {
 							activeClass='--active' 
 							className='l-header__nav-link'
 							to='home'
+							href='#home'
 							spy={true}
 							smooth={true}
 							offset={-80}
@@ -29,6 +30,7 @@ function Header() {
 							activeClass='--active' 
 							className='l-header__nav-link'
 							to='about'
+							href='#about'
 							spy={true}
 							smooth={true}
 							offset={-55}
@@ -42,6 +44,7 @@ function Header() {
 							activeClass='--active' 
 							className='l-header__nav-link'
 							to=''
+							href='#'
 							spy={true}
 							smooth={true}
 							offset={-105}
