@@ -81,4 +81,9 @@ html:not([data-scroll='0']) {
 			color: $text-color;
 		}
 	}
+
+	.--active {
+		background-color: $secundary-color;
+		color: $text-color;
+	}
 }

@@ -3,6 +3,7 @@ import './style.scss';
 
 import Home from '@containers/Home';
 import About from '@containers/About';
+import Projects from '@containers/Projects';
 
 function App () {
 
@@ -11,6 +12,7 @@ function App () {
 			<div className="l-main">
 				<Home />
 				<About />
+				<Projects />
 			</div>
 		</div>
 

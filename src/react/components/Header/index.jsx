@@ -19,7 +19,7 @@ function Header() {
 							href='#home'
 							spy={true}
 							smooth={true}
-							offset={-80}
+							offset={-110}
 							duration={500}
 						>
 							Home
@@ -33,7 +33,7 @@ function Header() {
 							href='#about'
 							spy={true}
 							smooth={true}
-							offset={-55}
+							offset={-110}
 							duration={500}
 						>
 							Sobre
@@ -43,11 +43,11 @@ function Header() {
 						<Link 
 							activeClass='--active' 
 							className='l-header__nav-link'
-							to=''
-							href='#'
+							to='projects'
+							href='#projects'
 							spy={true}
 							smooth={true}
-							offset={-105}
+							offset={-110}
 							duration={500}
 						>
 							Projetos

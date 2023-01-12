@@ -19,9 +19,9 @@ function Home() {
 					<img src={profilePic} alt='Uma foto minha' title='Uma foto minha' />
 					<figcaption>Lucas Borzani</figcaption>
 				</figure>
-				<p>{yearsOld - 1}y</p>
-				<p>Desenvolvedor Front-end</p>
-				<p>Atleta</p>
+				<p>&#10024; {yearsOld - 1}y</p>
+				<p>&#x1F468;&#x1F3FC;&#x200D;&#x1F4BB; Desenvolvedor Front-end</p>
+				<p>&#127952; Atleta</p>
 			</div>
 		</div>
 	);

@@ -18,7 +18,7 @@
 			font-size: 6rem;
 			padding: 5vh 15vw 5vh 3vw;
 			width: 20vw;
-			height: max-content;
+			height: 25vh;
 			margin: 0;
 			border-radius: 15px;
 			cursor: default;
@@ -47,6 +47,7 @@
 		align-items: center;
 		justify-items: center;
 		text-align: center;
+		user-select: none;
 
 		figure {
 			img {
@@ -66,6 +67,8 @@
 		p {
 			font-size: 1.3rem;
 			margin: 5px;
+			text-align: center;
+			width: max-content;
 		}
 	}
 }

@@ -1,0 +1,39 @@
+@import '../../__globals.scss';
+
+.l-projects {
+	background-color: $primary-color;
+	padding: 15px;
+	border-radius: 25px;
+	height: max-content;
+	margin-top: 15px;
+
+	section {
+		display: flex;
+		align-items: center;
+
+		h1 {
+			color: $text-color;
+			background-color: $secundary-color;
+			text-align: left;
+			text-overflow: clip;
+			font-size: 6rem;
+			padding: 5vh 15vw 5vh 3vw;
+			width: 20vw;
+			height: 25vh;
+			margin: 0;
+			border-radius: 15px;
+			cursor: default;
+			user-select: none;
+		}
+
+		p {
+			width: 50vw;
+			height: max-content;
+			margin: 0 15px;
+			font-size: 2.5rem;
+			font-weight: 900;
+			text-align: left;
+			color: $title-color;
+		}
+	}
+}

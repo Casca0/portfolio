@@ -19,7 +19,7 @@
 			font-size: 6rem;
 			padding: 5vh 15vw 5vh 3vw;
 			width: 20vw;
-			height: max-content;
+			height: 25vh;
 			margin: 0;
 			border-radius: 15px;
 			cursor: default;
@@ -41,9 +41,16 @@
 		color: $text-color;
 		background-color: $secundary-color;
 		border-radius: 15px;
-		padding: 10px;
-		margin: 15px 0 0 0;
-		font-size: 1.5rem;
-		text-indent: 25px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+
+		p {
+			margin: 0;
+			font-size: 1.5rem;
+			text-indent: 2vw;
+			margin-bottom: 15px;
+			text-align: justify;
+		}
 	}
 }
