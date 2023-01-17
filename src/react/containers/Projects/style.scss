@@ -36,4 +36,18 @@
 			color: $title-color;
 		}
 	}
+
+	&__content {
+		color: $text-color;
+		background-color: $secundary-color;
+		border-radius: 15px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		justify-content: center;
+		justify-items: center;
+	}
 }

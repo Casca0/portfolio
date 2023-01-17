@@ -1,0 +1,56 @@
+@import '../../__globals.scss';
+
+.l-projectbox {
+	color: $title-color;
+	background-color: $primary-color;
+	display: flex;
+	border-radius: 15px;
+	padding: 15px;
+	width: 40vw;
+	height: 30vh;
+
+	figure {
+		margin: 20px;
+		text-align: center;
+
+		img {
+			object-fit: contain;
+			width: 15vw;
+			height: 20vh;
+			background-color: $secundary-color;
+			border-radius: 15px;
+		}
+
+		figcaption {
+			font-size: 2rem;
+
+			a {
+				text-decoration: none;
+				font-weight: 900;
+
+				&:active {
+					color: $title-color;
+				}
+			}
+		}
+	}
+
+	section {
+		display: block;
+		width: 23vw;
+
+		h3 {
+			font-size: 2rem;
+			margin: 10px 0 15px 0;
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+			width: 23vw;
+			height: auto;
+			font-size: 1.3rem;
+			text-indent: 0;
+		}
+	}
+}

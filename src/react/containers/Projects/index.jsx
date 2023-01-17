@@ -1,13 +1,24 @@
 import React from 'react';
 import './style.scss';
 
+import { projects } from './projects.json';
+
+import ProjectBox from '@components/ProjectBox';
+
 function Projects() {
 	return (
 		<div className='l-projects' id='projects'>
 			<section>
 				<h1>Projetos</h1>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit accusamus consectetur aliquid maxime quae iure, harum natus dolorum dolorem, eos iusto quo amet, quod aperiam inventore perferendis adipisci ipsa. Ullam!</p>
+				<p>Coleção dos meus projetos!</p>
 			</section>
+			<div className="l-projects__content">
+				{projects.flat().map((item) => {
+					return (
+						<ProjectBox project={item} key={item.id}/>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
