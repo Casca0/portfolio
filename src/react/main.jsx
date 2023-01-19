@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client';
 import './index.scss';
 
 import App from '@pages/App/index.jsx';
-import Header from '@components/Header';
+import Header from '@containers/Header';
+import Footer from '@containers/Footer';
 
 function react() {
 
@@ -14,6 +15,7 @@ function react() {
 		<React.StrictMode>
 			<Header />
 			<App />
+			<Footer />
 		</React.StrictMode>,
 	);
 }

@@ -54,13 +54,13 @@ html:not([data-scroll='0']) {
 	}
 
 	&__nav {
-		margin-right: 10vw;
+		margin-right: 8vw;
 
 		ul {
 			display: flex;
 			justify-content: space-evenly;
 			list-style: none;
-			width: 20vw;
+			width: 30vw;
 			height: max-content;
 		}
 	}

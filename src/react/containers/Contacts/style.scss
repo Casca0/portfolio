@@ -1,0 +1,110 @@
+@import '../../__globals.scss';
+
+.l-contacts {
+	background-color: $primary-color;
+	padding: 15px;
+	border-radius: 25px;
+	height: max-content;
+	margin-top: 15px;
+
+	section {
+		display: flex;
+		align-items: center;
+
+		h1 {
+			color: $text-color;
+			background-color: $secundary-color;
+			text-align: left;
+			text-overflow: clip;
+			font-size: 6rem;
+			padding: 5vh 15vw 5vh 3vw;
+			width: 20vw;
+			height: 25vh;
+			margin: 0;
+			border-radius: 15px;
+			cursor: default;
+			user-select: none;
+		}
+
+		p {
+			width: 50vw;
+			height: max-content;
+			margin: 0 15px;
+			font-size: 2.5rem;
+			font-weight: 900;
+			text-align: left;
+			color: $title-color;
+		}
+	}
+
+	&__content {
+		color: $text-color;
+		background-color: $secundary-color;
+		border-radius: 15px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+	}
+
+	&__link {
+		display: flex;
+		width: max-content;
+		background: $secundary-color;
+		border-radius: 15px;
+		border: 3px solid $primary-color;
+		margin: 15px;
+		padding: 10px 15px;
+		text-decoration: none;
+		align-items: center;
+		transition: ease-in-out 0.2s;
+		color: $primary-color;
+
+		img {
+			width: 3vw;
+			height: 5vh;
+			margin-right: 10px;
+		}
+
+		p {
+			margin: 0;
+			font-weight: 700;
+		}
+
+		&#github {
+
+			&:hover {
+				background: #181717;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#gmail {
+			&:hover {
+				background: #EA4335;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#linkedin {
+			&:hover {
+				background: #0A66C2;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#whatsapp {
+			&:hover {
+				background: #25D366;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+	}
+}

@@ -4,6 +4,7 @@ import './style.scss';
 import Home from '@containers/Home';
 import About from '@containers/About';
 import Projects from '@containers/Projects';
+import Contacts from '@containers/Contacts';
 
 function App () {
 
@@ -13,6 +14,7 @@ function App () {
 				<Home />
 				<About />
 				<Projects />
+				<Contacts />
 			</div>
 		</div>
 

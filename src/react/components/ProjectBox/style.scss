@@ -7,22 +7,23 @@
 	border-radius: 15px;
 	padding: 15px;
 	width: 40vw;
-	height: 30vh;
+	height: 20vh;
 
 	figure {
 		margin: 20px;
 		text-align: center;
 
 		img {
-			object-fit: contain;
-			width: 15vw;
-			height: 20vh;
+			object-fit: scale-down;
+			width: 5vw;
+			height: 10vh;
 			background-color: $secundary-color;
 			border-radius: 15px;
 		}
 
 		figcaption {
-			font-size: 2rem;
+			width: 10vw;
+			font-size: 1.3rem;
 
 			a {
 				text-decoration: none;
@@ -37,18 +38,19 @@
 
 	section {
 		display: block;
-		width: 23vw;
+		width: 27vw;
+		height: 20vh;
 
-		h3 {
-			font-size: 2rem;
+		h2 {
+			font-size: 1.5rem;
 			margin: 10px 0 15px 0;
 		}
 
 		p {
 			margin: 0;
 			padding: 0;
-			width: 23vw;
-			height: auto;
+			width: auto;
+			height: max-content;
 			font-size: 1.3rem;
 			text-indent: 0;
 		}

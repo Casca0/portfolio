@@ -45,9 +45,8 @@
 		margin-top: 15px;
 		user-select: none;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 15px;
-		justify-content: center;
+		grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+		gap: 10px;
 		justify-items: center;
 	}
 }

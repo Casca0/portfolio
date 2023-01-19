@@ -1,0 +1,15 @@
+@import '../../__globals.scss';
+
+.l-footer {
+	background-color: $primary-color;
+	color: $title-color;
+	text-align: center;
+	padding: 5px;
+	border-radius: 50px 50px 0 0;
+
+	p {
+		font-weight: 900;
+		font-size: 1.2rem;
+		user-select: none;
+	}
+}
