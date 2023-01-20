@@ -52,4 +52,24 @@
 			}
 		}
 	}
+
+	&__curriculum {
+		background-color: #1E5128;
+		color: $text-color;
+		border: solid 3px $primary-color;
+		text-decoration: none;
+		font-size: 1.5rem;
+		margin: 15px 0;
+		padding: 15px;
+		border-radius: 15px;
+		transition: ease-in 0.2s;
+
+		@media screen and (max-width: 789px) {
+			font-size: 2.5rem;
+		}
+
+		&:hover {
+			background-color: #4E9F3D;
+		}
+	}
 }
