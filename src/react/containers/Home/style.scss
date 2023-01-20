@@ -1,40 +1,7 @@
 @import '../../__globals.scss';
 
 .l-home {
-	background-color: $primary-color;
-	padding: 15px;
-	border-radius: 25px;
-	height: max-content;
-
-	section {
-		display: flex;
-		align-items: center;
-
-		h1 {
-			color: $text-color;
-			background-color: $secundary-color;
-			text-align: left;
-			text-overflow: clip;
-			font-size: 6rem;
-			padding: 5vh 15vw 5vh 3vw;
-			width: 20vw;
-			height: 25vh;
-			margin: 0;
-			border-radius: 15px;
-			cursor: default;
-			user-select: none;
-		}
-
-		p {
-			width: 50vw;
-			height: max-content;
-			margin: 0 15px;
-			font-size: 2.5rem;
-			font-weight: 900;
-			text-align: left;
-			color: $title-color;
-		}
-	}
+	@include mainBoxStyle();
 
 	&__content {
 		color: $text-color;
@@ -57,10 +24,20 @@
 				height: 40vh;
 				border-radius: 35px;
 				border: 5px solid $primary-color;
+
+
+				@media screen and (max-width: 789px) {
+					width: 45vw;
+					height: 30vh;
+				}
 			}
 
 			figcaption {
 				font-size: 2rem;
+
+				@media screen and (max-width: 789px) {
+					font-size: 3rem;
+				}
 			}
 		}
 
@@ -69,6 +46,10 @@
 			margin: 5px;
 			text-align: center;
 			width: max-content;
+
+			@media screen and (max-width: 789px) {
+				font-size: 2rem;
+			}
 		}
 	}
 }

@@ -11,5 +11,9 @@
 		font-weight: 900;
 		font-size: 1.2rem;
 		user-select: none;
+
+		@media screen and (max-width: 789px) {
+			font-size: 3.5vw;
+		}
 	}
 }

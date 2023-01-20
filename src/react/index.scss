@@ -3,6 +3,10 @@
 
 html {
 	font-size: 0.8vw;
+
+	@media screen and (max-width: 789px) {
+		font-size: 1.5vw;
+	}
 }
 
 body {
