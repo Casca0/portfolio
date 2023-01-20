@@ -1,13 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 // Colors
 
-$primary-color: #FFBCD1;
-$secundary-color: #6867AC;
-$title-color: #A267AC;
-$text-color: #F0D9FF;
+$primary-color: #8bd450;
+$secundary-color: #1d1a2f;
+$title-color: #614085;
+$text-color: #D8E9A8;
 
-// Fonts
+@mixin mainBoxStyle {
+	background-color: $primary-color;
+	padding: 15px;
+	border-radius: 25px;
+	height: max-content;
+	margin-top: 15px;
 
-$text-font: 'Montserrat', sans-serif;
+	section {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: 789px) {
+			display: block;
+		}
+
+		h1 {
+			color: $text-color;
+			background-color: $secundary-color;
+			text-align: left;
+			text-overflow: clip;
+			font-size: 6rem;
+			padding: 5vh 15vw 5vh 3vw;
+			width: 20vw;
+			height: 25vh;
+			margin: 0;
+			border-radius: 15px;
+			cursor: default;
+			user-select: none;
+
+
+			@media screen and (max-width: 789px) {
+				width: auto;
+				height: 6vh;
+				text-align: center;
+				padding: 5vw;
+			}
+		}
+
+		p {
+			width: 50vw;
+			height: max-content;
+			margin: 0 15px;
+			font-size: 2.5rem;
+			font-weight: 900;
+			text-align: left;
+			color: $title-color;
+
+
+			@media screen and (max-width: 789px) {
+				width: auto;
+				text-align: center;
+				margin: 15px 0;
+			}
+		}
+	}
+
+
+}

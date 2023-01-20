@@ -1,0 +1,26 @@
+@import '../../__globals.scss';
+
+.l-about {
+	@include mainBoxStyle();
+
+	&__content {
+		color: $text-color;
+		background-color: $secundary-color;
+		border-radius: 15px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+
+		p {
+			margin: 0;
+			font-size: 1.6rem;
+			text-indent: 2vw;
+			margin-bottom: 15px;
+			text-align: justify;
+
+			@media screen and (max-width: 789px) {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}

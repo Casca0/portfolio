@@ -1,0 +1,24 @@
+@import '../../__globals.scss';
+
+.l-projects {
+	@include mainBoxStyle();
+
+	&__content {
+		color: $text-color;
+		background-color: $secundary-color;
+		border-radius: 15px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+		gap: 10px;
+		justify-items: center;
+
+		@media screen and (max-width: 789px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

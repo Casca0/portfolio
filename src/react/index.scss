@@ -1,6 +1,14 @@
 @import '__globals.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+html {
+	font-size: 0.8vw;
+
+	@media screen and (max-width: 789px) {
+		font-size: 1.5vw;
+	}
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -9,6 +17,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#root {
-	height: 100vmin;
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: $primary-color;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #734f9a;
 }

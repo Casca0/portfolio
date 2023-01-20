@@ -1,0 +1,85 @@
+@import '../../__globals.scss';
+
+.l-contacts {
+	@include mainBoxStyle();
+
+	&__content {
+		color: $text-color;
+		background-color: $secundary-color;
+		border-radius: 15px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+	}
+
+	&__link {
+		display: flex;
+		width: max-content;
+		background: $secundary-color;
+		border-radius: 15px;
+		border: 3px solid $primary-color;
+		margin: 15px;
+		padding: 10px 15px;
+		text-decoration: none;
+		align-items: center;
+		transition: ease-in-out 0.2s;
+		color: $primary-color;
+
+		img {
+			width: 3vw;
+			height: 5vh;
+			margin-right: 10px;
+
+			@media screen and (max-width: 789px) {
+				width: 10vw;
+				height: 7vh;
+			}
+		}
+
+		p {
+			margin: 0;
+			font-weight: 700;
+
+			@media screen and (max-width: 789px) {
+				font-size: 3.5vw;
+			}
+		}
+
+		&#github {
+
+			&:hover {
+				background: #181717;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#gmail {
+			&:hover {
+				background: #EA4335;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#linkedin {
+			&:hover {
+				background: #0A66C2;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#whatsapp {
+			&:hover {
+				background: #25D366;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+	}
+}
