@@ -4,21 +4,125 @@
 	@include mainBoxStyle();
 
 	&__content {
+		height: 40vh;
+		width: 30%;
 		color: $text-color;
 		background-color: $secundary-color;
 		border-radius: 15px;
 		padding: 15px;
 		margin-top: 15px;
 		user-select: none;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
-		gap: 10px;
-		justify-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow-y: auto;
+		overflow-x: hidden;
 
 		@media screen and (max-width: 789px) {
-			display: flex;
+			width: auto;
+		}
+	}
+
+	&__main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		@media screen and (max-width: 789px) {
 			flex-direction: column;
-			align-items: center;
+		}
+	}
+
+	&__contacts {
+		height: 40vh;
+		width: 30%;
+		color: $text-color;
+		background-color: $secundary-color;
+		border-radius: 15px;
+		padding: 15px;
+		margin-top: 15px;
+		user-select: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 15px;
+
+		@media screen and (max-width: 789px) {
+			width: auto;
+			height: auto;
+		}
+	}
+
+	&__contact-link {
+		display: flex;
+		width: 8vw;
+		background: $secundary-color;
+		border-radius: 15px;
+		border: 3px solid $primary-color;
+		margin: 10px;
+		padding: 10px 15px;
+		text-decoration: none;
+		align-items: center;
+		transition: ease-in-out 0.2s;
+		color: $primary-color;
+
+		@media screen and (max-width: 789px) {
+			width: 35vw;
+			height: 5vh;
+		}
+
+		.l-contactIcon {
+			width: 3vw;
+			height: 5vh;
+			margin-right: 10px;
+			fill: #fff;
+
+			@media screen and (max-width: 789px) {
+				width: 10vw;
+				height: 7vh;
+			}
+		}
+
+		p {
+			margin: 0;
+			font-weight: 700;
+			text-align: center;
+			width: 100%;
+
+			@media screen and (max-width: 789px) {
+				font-size: 3.5vw;
+			}
+		}
+
+		&#github {
+			&:hover {
+				background: #181717;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#gmail {
+			&:hover {
+				background: #EA4335;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#linkedin {
+			&:hover {
+				background: #0A66C2;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+
+		&#whatsapp {
+			&:hover {
+				background: #25D366;
+				border: 3px solid #fff;
+				color: #fff;
+			}
 		}
 	}
 }

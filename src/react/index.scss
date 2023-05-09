@@ -18,13 +18,15 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-	background: $primary-color;
+	background: $secundary-color;
+	border-radius: 0 15px 15px 0;
 }
 
 ::-webkit-scrollbar-thumb {
 	background: #734f9a;
+	border-radius: 0 15px 15px 0;
 }
