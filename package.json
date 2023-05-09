@@ -8,8 +8,7 @@
 	},
 	"scripts": {
 		"dev": "parcel index.html --lazy",
-		"build": "parcel build",
-		"start": "parcel"
+		"build": "parcel build index.html"
 	},
 	"dependencies": {
 		"@octokit/core": "^4.2.0",
