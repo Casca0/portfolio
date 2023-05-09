@@ -1,10 +1,9 @@
 import React from 'react';
 import './style.scss';
 
-import Home from '@containers/Home';
-import About from '@containers/About';
-import Projects from '@containers/Projects';
-import Contacts from '@containers/Contacts';
+import Home from '~/src/react/containers/Home/index.jsx';
+import About from '~/src/react/containers/About/index.jsx';
+import Projects from '~/src/react/containers/Projects/index.jsx';
 
 function App () {
 
@@ -14,7 +13,6 @@ function App () {
 				<Home />
 				<About />
 				<Projects />
-				<Contacts />
 			</div>
 		</div>
 

@@ -6,33 +6,6 @@
 		"jsx": "react",
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
-		"baseUrl": ".",
-		"paths": {
-			"@assets": [
-				"src/react/assets"
-			],
-			"@assets/*": [
-				"src/react/assets/*"
-			],
-			"@pages": [
-				"src/react/pages"
-			],
-			"@pages/*": [
-				"src/react/pages/*"
-			],
-			"@containers": [
-				"src/react/containers"
-			],
-			"@containers/*": [
-				"src/react/containers/*"
-			],
-			"@components": [
-				"src/react/components"
-			],
-			"@components/*": [
-				"src/react/components/*"
-			],
-		}
 	},
 	"exclude": [
 		"node_modules",

@@ -53,20 +53,6 @@ function Header() {
 							Projetos
 						</Link>
 					</li>
-					<li>
-						<Link 
-							activeClass='--active' 
-							className='l-header__nav-link'
-							to='contacts'
-							href='#contacts'
-							spy={true}
-							smooth={true}
-							offset={-110}
-							duration={500}
-						>
-							Contatos
-						</Link>
-					</li>
 				</ul>
 			</nav>
 		</header>

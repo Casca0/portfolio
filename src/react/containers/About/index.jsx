@@ -6,7 +6,7 @@ function About() {
 		<div className='l-about' id='about'>
 			<section>
 				<h1>Sobre mim</h1>
-				<p>Nesta seção irei falar sobre quem sou eu, pessoalmente e profissionalmente.</p>
+				<p id='l-description'>Nesta seção irei falar sobre quem sou eu, pessoalmente e profissionalmente.</p>
 			</section>
 			<div className='l-about__content'>
 				<p>
